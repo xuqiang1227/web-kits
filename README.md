@@ -34,3 +34,12 @@ Some kits commonly used in work of frontend.
   getMaxZIndex('.myClass', 100);
 
 ```
+
+* isEmail
+
+```ts
+  import { isEmail } from 'web-js-kits';
+
+  isEmail('abc@ab.com'); // true
+
+```
