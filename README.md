@@ -43,3 +43,15 @@ Some kits commonly used in work of frontend.
   isEmail('abc@ab.com'); // true
 
 ```
+
+* isEmail
+
+```ts
+  import { isWebSite } from 'web-js-kits';
+
+  isWebSite('www.github.com') // false
+  isWebSite('www.github.com', true) // true
+  isWebSite('https://www.github.com', true) //  true
+  isWebSite('https://www.github.com') // true
+
+```
