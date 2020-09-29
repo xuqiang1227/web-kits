@@ -1,0 +1,849 @@
+C:\workspace\web-kits\src
+Webpack Bundle Analyzer is started at http://127.0.0.1:8888
+Use Ctrl+C to close it
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.1",
+  "hash": "fdb3cdda582c02843777",
+  "time": 3592,
+  "builtAt": 1601350826651,
+  "publicPath": "",
+  "outputPath": "C:\\workspace\\web-kits\\dist",
+  "assetsByChunkName": {
+    "index": "weCom.js"
+  },
+  "assets": [
+    {
+      "name": "weCom.js",
+      "size": 3630,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "index"
+      ],
+      "info": {},
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "index": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "weCom.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "index": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "weCom.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 4651,
+      "names": [
+        "index"
+      ],
+      "files": [
+        "weCom.js"
+      ],
+      "hash": "f9408803e01057137d53",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "index": 0,
+          "index2": 6,
+          "size": 892,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "./src/index.ts",
+              "loc": "index"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 0,
+          "source": "\"use strict\";\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(require(\"./base64ToBlob\"), exports);\r\n__exportStar(require(\"./download\"), exports);\r\n__exportStar(require(\"./common\"), exports);\r\n__exportStar(require(\"./getUrlParam\"), exports);\r\n__exportStar(require(\"./h5Device\"), exports);\r\n__exportStar(require(\"./getTopZIndex\"), exports);\r\n"
+        },
+        {
+          "id": 1,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\base64ToBlob.ts",
+          "name": "./src/base64ToBlob.ts",
+          "index": 1,
+          "index2": 0,
+          "size": 518,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./base64ToBlob",
+              "loc": "13:13-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.base64ToBlob = void 0;\r\nexports.base64ToBlob = function (code) {\r\n    var parts = code.split(';base64,');\r\n    var contentType = parts[0].split(':')[1];\r\n    var raw = window.atob(parts[1]);\r\n    var rawLength = raw.length;\r\n    var uInt8Array = new Uint8Array(rawLength);\r\n    for (var i = 0; i < rawLength; ++i) {\r\n        uInt8Array[i] = raw.charCodeAt(i);\r\n    }\r\n    return new Blob([uInt8Array], { type: contentType });\r\n};\r\n"
+        },
+        {
+          "id": 2,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\download.ts",
+          "name": "./src/download.ts",
+          "index": 2,
+          "index2": 1,
+          "size": 1179,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./download",
+              "loc": "14:13-34"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.isIE = exports.downloadFile = void 0;\r\n/**\r\n *\r\n */\r\nexports.downloadFile = function (url, fileName) {\r\n    if (fileName === void 0) { fileName = ''; }\r\n    if (!url) {\r\n        throw new Error('url param is must be provided.');\r\n    }\r\n    if (exports.isIE()) {\r\n        ieDown(url);\r\n    }\r\n    else {\r\n        var aLink = document.createElement('a');\r\n        var evt = document.createEvent('MouseEvents');\r\n        // var evt = document.createEvent(\"HTMLEvents\")\r\n        evt.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);\r\n        // evt.initEvent(\"click\", false, false)//initEvent 不加后两个参数在FF下会报错, 感谢 Barret Lee 的反馈\r\n        aLink.download = fileName;\r\n        aLink.href = url;\r\n        aLink.dispatchEvent(evt);\r\n    }\r\n};\r\nvar ieDown = function (url) {\r\n    window.open(url);\r\n};\r\nexports.isIE = function () {\r\n    var explorer = window.navigator.userAgent;\r\n    return (explorer.indexOf('MSIE') >= 0 ||\r\n        explorer.indexOf('Trident/7.0') >= 0 ||\r\n        explorer.indexOf('Edge') >= 0);\r\n};\r\n"
+        },
+        {
+          "id": 3,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\common.ts",
+          "name": "./src/common.ts",
+          "index": 3,
+          "index2": 2,
+          "size": 79,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./common",
+              "loc": "15:13-32"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n"
+        },
+        {
+          "id": 4,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\getUrlParam.ts",
+          "name": "./src/getUrlParam.ts",
+          "index": 4,
+          "index2": 3,
+          "size": 877,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./getUrlParam",
+              "loc": "16:13-37"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\n//获取URL地址的参数值。\r\n//name为URL参数名\r\n//例如：?param1=abc&param2=123\r\n// getUrlParam(\"param2\"）时，获取到的值为：123\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getUrlParam = void 0;\r\nexports.getUrlParam = function (name, url) {\r\n    var search = url\r\n        ? url.split('?')[1]\r\n        : window.location.search.substr(1);\r\n    if (!search) {\r\n        return null;\r\n    }\r\n    if (!name) {\r\n        var params = search.split('&')\r\n            .reduce(function (res, i) {\r\n            var curParam = i.split('=');\r\n            res[curParam[0]] = curParam[1];\r\n            return res;\r\n        }, {});\r\n        return params;\r\n    }\r\n    var reg = new RegExp(\"(^|&)\" + name + \"=([^&]*)(&|$)\");\r\n    var r = search.match(reg);\r\n    if (r !== null) {\r\n        return r[2];\r\n    }\r\n    return null;\r\n};\r\n"
+        },
+        {
+          "id": 5,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\h5Device.ts",
+          "name": "./src/h5Device.ts",
+          "index": 5,
+          "index2": 4,
+          "size": 704,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./h5Device",
+              "loc": "17:13-34"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getDevice = exports.Device = void 0;\r\nvar Device;\r\n(function (Device) {\r\n    Device[\"pc\"] = \"pc\";\r\n    Device[\"mobile\"] = \"mobile\";\r\n    Device[\"ios\"] = \"ios\";\r\n    Device[\"android\"] = \"android\";\r\n})(Device = exports.Device || (exports.Device = {}));\r\nexports.getDevice = function (isMobile) {\r\n    var agent = navigator.userAgent;\r\n    if (isMobile && /iphone/ig.test(agent)) {\r\n        return Device.ios;\r\n    }\r\n    if (isMobile && /android/ig.test(agent)) {\r\n        return Device.android;\r\n    }\r\n    if (/mobile|android|iphone/ig.test(agent)) {\r\n        return Device.mobile;\r\n    }\r\n    return Device.pc;\r\n};\r\n"
+        },
+        {
+          "id": 6,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\getTopZIndex.ts",
+          "name": "./src/getTopZIndex.ts",
+          "index": 6,
+          "index2": 5,
+          "size": 402,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "issuerId": 0,
+          "issuerName": "./src/index.ts",
+          "issuerPath": [
+            {
+              "id": 0,
+              "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "name": "./src/index.ts",
+              "profile": {
+                "factory": 43,
+                "building": 2843
+              }
+            }
+          ],
+          "profile": {
+            "factory": 9,
+            "building": 228
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+              "module": "./src/index.ts",
+              "moduleName": "./src/index.ts",
+              "type": "cjs require",
+              "userRequest": "./getTopZIndex",
+              "loc": "18:13-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [
+            "ModuleConcatenation bailout: Module is not an ECMAScript module"
+          ],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getTopZIndex = void 0;\r\nexports.getTopZIndex = function (className) {\r\n    var dialogZIndexes = Array.from(document.querySelectorAll(className))\r\n        .map(function (d) { return Number(d.style.zIndex || 0); });\r\n    var maxZIndex = Math.max.apply(Math, [100].concat(dialogZIndexes));\r\n    return maxZIndex;\r\n};\r\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "index",
+          "request": "./src/index.ts",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "name": "./src/index.ts",
+      "index": 0,
+      "index2": 6,
+      "size": 892,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "profile": {
+        "factory": 43,
+        "building": 2843
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "./src/index.ts",
+          "loc": "index"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 0,
+      "source": "\"use strict\";\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n__exportStar(require(\"./base64ToBlob\"), exports);\r\n__exportStar(require(\"./download\"), exports);\r\n__exportStar(require(\"./common\"), exports);\r\n__exportStar(require(\"./getUrlParam\"), exports);\r\n__exportStar(require(\"./h5Device\"), exports);\r\n__exportStar(require(\"./getTopZIndex\"), exports);\r\n"
+    },
+    {
+      "id": 1,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\base64ToBlob.ts",
+      "name": "./src/base64ToBlob.ts",
+      "index": 1,
+      "index2": 0,
+      "size": 518,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./base64ToBlob",
+          "loc": "13:13-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.base64ToBlob = void 0;\r\nexports.base64ToBlob = function (code) {\r\n    var parts = code.split(';base64,');\r\n    var contentType = parts[0].split(':')[1];\r\n    var raw = window.atob(parts[1]);\r\n    var rawLength = raw.length;\r\n    var uInt8Array = new Uint8Array(rawLength);\r\n    for (var i = 0; i < rawLength; ++i) {\r\n        uInt8Array[i] = raw.charCodeAt(i);\r\n    }\r\n    return new Blob([uInt8Array], { type: contentType });\r\n};\r\n"
+    },
+    {
+      "id": 2,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\download.ts",
+      "name": "./src/download.ts",
+      "index": 2,
+      "index2": 1,
+      "size": 1179,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./download",
+          "loc": "14:13-34"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.isIE = exports.downloadFile = void 0;\r\n/**\r\n *\r\n */\r\nexports.downloadFile = function (url, fileName) {\r\n    if (fileName === void 0) { fileName = ''; }\r\n    if (!url) {\r\n        throw new Error('url param is must be provided.');\r\n    }\r\n    if (exports.isIE()) {\r\n        ieDown(url);\r\n    }\r\n    else {\r\n        var aLink = document.createElement('a');\r\n        var evt = document.createEvent('MouseEvents');\r\n        // var evt = document.createEvent(\"HTMLEvents\")\r\n        evt.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);\r\n        // evt.initEvent(\"click\", false, false)//initEvent 不加后两个参数在FF下会报错, 感谢 Barret Lee 的反馈\r\n        aLink.download = fileName;\r\n        aLink.href = url;\r\n        aLink.dispatchEvent(evt);\r\n    }\r\n};\r\nvar ieDown = function (url) {\r\n    window.open(url);\r\n};\r\nexports.isIE = function () {\r\n    var explorer = window.navigator.userAgent;\r\n    return (explorer.indexOf('MSIE') >= 0 ||\r\n        explorer.indexOf('Trident/7.0') >= 0 ||\r\n        explorer.indexOf('Edge') >= 0);\r\n};\r\n"
+    },
+    {
+      "id": 3,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\common.ts",
+      "name": "./src/common.ts",
+      "index": 3,
+      "index2": 2,
+      "size": 79,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./common",
+          "loc": "15:13-32"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\n"
+    },
+    {
+      "id": 4,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\getUrlParam.ts",
+      "name": "./src/getUrlParam.ts",
+      "index": 4,
+      "index2": 3,
+      "size": 877,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./getUrlParam",
+          "loc": "16:13-37"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\n//获取URL地址的参数值。\r\n//name为URL参数名\r\n//例如：?param1=abc&param2=123\r\n// getUrlParam(\"param2\"）时，获取到的值为：123\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getUrlParam = void 0;\r\nexports.getUrlParam = function (name, url) {\r\n    var search = url\r\n        ? url.split('?')[1]\r\n        : window.location.search.substr(1);\r\n    if (!search) {\r\n        return null;\r\n    }\r\n    if (!name) {\r\n        var params = search.split('&')\r\n            .reduce(function (res, i) {\r\n            var curParam = i.split('=');\r\n            res[curParam[0]] = curParam[1];\r\n            return res;\r\n        }, {});\r\n        return params;\r\n    }\r\n    var reg = new RegExp(\"(^|&)\" + name + \"=([^&]*)(&|$)\");\r\n    var r = search.match(reg);\r\n    if (r !== null) {\r\n        return r[2];\r\n    }\r\n    return null;\r\n};\r\n"
+    },
+    {
+      "id": 5,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\h5Device.ts",
+      "name": "./src/h5Device.ts",
+      "index": 5,
+      "index2": 4,
+      "size": 704,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./h5Device",
+          "loc": "17:13-34"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getDevice = exports.Device = void 0;\r\nvar Device;\r\n(function (Device) {\r\n    Device[\"pc\"] = \"pc\";\r\n    Device[\"mobile\"] = \"mobile\";\r\n    Device[\"ios\"] = \"ios\";\r\n    Device[\"android\"] = \"android\";\r\n})(Device = exports.Device || (exports.Device = {}));\r\nexports.getDevice = function (isMobile) {\r\n    var agent = navigator.userAgent;\r\n    if (isMobile && /iphone/ig.test(agent)) {\r\n        return Device.ios;\r\n    }\r\n    if (isMobile && /android/ig.test(agent)) {\r\n        return Device.android;\r\n    }\r\n    if (/mobile|android|iphone/ig.test(agent)) {\r\n        return Device.mobile;\r\n    }\r\n    return Device.pc;\r\n};\r\n"
+    },
+    {
+      "id": 6,
+      "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\getTopZIndex.ts",
+      "name": "./src/getTopZIndex.ts",
+      "index": 6,
+      "index2": 5,
+      "size": 402,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "issuer": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+      "issuerId": 0,
+      "issuerName": "./src/index.ts",
+      "issuerPath": [
+        {
+          "id": 0,
+          "identifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "name": "./src/index.ts",
+          "profile": {
+            "factory": 43,
+            "building": 2843
+          }
+        }
+      ],
+      "profile": {
+        "factory": 9,
+        "building": 228
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "C:\\workspace\\web-kits\\node_modules\\ts-loader\\index.js!C:\\workspace\\web-kits\\src\\index.ts",
+          "module": "./src/index.ts",
+          "moduleName": "./src/index.ts",
+          "type": "cjs require",
+          "userRequest": "./getTopZIndex",
+          "loc": "18:13-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not an ECMAScript module"
+      ],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.getTopZIndex = void 0;\r\nexports.getTopZIndex = function (className) {\r\n    var dialogZIndexes = Array.from(document.querySelectorAll(className))\r\n        .map(function (d) { return Number(d.style.zIndex || 0); });\r\n    var maxZIndex = Math.max.apply(Math, [100].concat(dialogZIndexes));\r\n    return maxZIndex;\r\n};\r\n"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
