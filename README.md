@@ -25,3 +25,12 @@ Some kits commonly used in work of frontend.
   downloadFile(url, fileName);
 
 ```
+
+* `getMaxZIndex`
+
+```ts
+  import { getMaxZIndex } from 'web-js-kits';
+
+  getMaxZIndex('.myClass', 100);
+
+```
