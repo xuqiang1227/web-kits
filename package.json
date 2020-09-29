@@ -1,5 +1,5 @@
 {
-  "name": "web-kits",
+  "name": "web-js-kits",
   "version": "0.0.1",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
