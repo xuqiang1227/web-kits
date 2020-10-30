@@ -1,6 +1,6 @@
 {
   "name": "web-js-kits",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
   "author": "xuqiang",

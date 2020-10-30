@@ -63,3 +63,13 @@ Some kits commonly used in work of frontend.
   isWebSite('https://www.github.com') // true
 
 ```
+
+* color
+
+```js
+import { rgbToHex, hexToRgb, rgbToHsl, hexToHsl } from '../src/color';
+ const rgb = hexToRgb('#FFFFFF');
+ // RGB(255, 255, 255)
+ const hex = rgbToHex(255, 255, 255);
+ // #FFFFFF
+```
