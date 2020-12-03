@@ -14,6 +14,20 @@ Some kits commonly used in work of frontend.
    npm i web-js-kits
 ```
 
+* `base64ToBlob`
+
+```js
+import { base64ToBlob } from 'web-js-kits';
+base64ToBlob(base64);
+```
+
+* h5Device
+
+```js
+import { getDevice } from 'web-js-kits';
+getDevice() // ios or android or pc or mobile
+```
+
 * `getUrlParam` 
 
 ```js
