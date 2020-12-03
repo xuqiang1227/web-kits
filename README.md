@@ -67,9 +67,35 @@ Some kits commonly used in work of frontend.
 * color
 
 ```js
-import { rgbToHex, hexToRgb, rgbToHsl, hexToHsl } from '../src/color';
+import { rgbToHex, hexToRgb, rgbToHsl, hexToHsl } from 'web-js-kits';
  const rgb = hexToRgb('#FFFFFF');
  // RGB(255, 255, 255)
  const hex = rgbToHex(255, 255, 255);
  // #FFFFFF
+```
+
+* isNumber
+
+```js
+import { isNumber } from 'web-js-kits';
+isNumber(123) //true
+isNumber('123') //false
+```
+
+* formatNumber
+
+```js
+import { formatNumber } from 'web-js-kits';
+formatNumber(1234567.89) // 1,234,567.89
+formatNumber(1234567.89, 1) // 1,234,567.9
+```
+
+* requestThrottler
+
+```js
+import { requestThrottler } from 'web-js-kits';
+
+// 第一个参数为 axios config
+// 当第二个参数为true时，重新发的接口会缓存到内容，不会消耗网络资源
+requestThrottler({url: '', method: 'get'}, true);
 ```

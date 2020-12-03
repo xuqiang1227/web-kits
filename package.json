@@ -1,6 +1,6 @@
 {
   "name": "web-js-kits",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
   "author": "xuqiang",
@@ -17,7 +17,9 @@
     "javascript kits",
     "js function"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
