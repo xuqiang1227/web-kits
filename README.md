@@ -99,9 +99,12 @@ isNumber('123') //false
 * formatNumber
 
 ```js
-import { formatNumber } from 'web-js-kits';
-formatNumber(1234567.89) // 1,234,567.89
-formatNumber(1234567.89, 1) // 1,234,567.9
+import { numberFormatCommon, numberFormat, numberParse } from 'web-js-kits';
+numberFormatCommon(1234567.89) // 1,234,567.89
+numberFormatCommon(1234567.89, 1) // 1,234,567.9
+
+numberFormat(1234567.89, 'x.xxx.xxx,xxx') // 1.234.567,89
+numberParse('1.234.567,89', 'x.xxx.xxx,xxx') // '1234567.89'
 ```
 
 * requestThrottler
