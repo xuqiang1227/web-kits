@@ -11,3 +11,4 @@ export * from './isEmail';
 export * from './isNumber';
 export * from './isWebSite';
 export * from './requestThrottler';
+export * from './countryCode';
