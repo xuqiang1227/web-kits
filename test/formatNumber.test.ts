@@ -1,4 +1,4 @@
-import { numberFormatCommon, numberFormat, numberParse } from '../src/formatNumber';
+import { numberFormatCommon, numberFormat, numberParse } from '../src';
 
 test('formatNumber', () => {
   expect(numberFormatCommon(123456)).toBe('123,456');
