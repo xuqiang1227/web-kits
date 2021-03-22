@@ -103,7 +103,7 @@ const _requestThrottler = new RequestThrottler();
  * 通用请求接口
  * @param requestConf 请求配置
  * @param throttle 是否限流
- * @param cacheMaxAgeMS 是否限流
+ * @param cacheMaxAgeMS 时期时间(毫秒)，默认20000
  */
 export const requestThrottler = async (
   requestConf: AxiosRequestConfig,
