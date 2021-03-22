@@ -22,7 +22,17 @@ export class RequestThrottler {
   }
   protected getValidCachedRequest = (key: string) => {
     const req = this._map[key];
-    return req && req.expired >= Date.now() ? req : null;
+
+    if (req) {
+      if (req.expired >= Date.now()) {
+        return req;
+      } else {
+        delete this._map[key];
+        return null;
+      }
+    }
+    return null;
+    // return req && req.expired >= Date.now() ? req : null;
   };
   protected setPendingURL = (
     key: string,
@@ -81,6 +91,10 @@ export class RequestThrottler {
       });
     }
   };
+
+  setCacheMaxAgeMS = (time: number) => {
+    this.conf.cacheMaxAgeMS = time;
+  }
 }
 
 const _requestThrottler = new RequestThrottler();
@@ -89,13 +103,18 @@ const _requestThrottler = new RequestThrottler();
  * 通用请求接口
  * @param requestConf 请求配置
  * @param throttle 是否限流
+ * @param cacheMaxAgeMS 是否限流
  */
 export const requestThrottler = async (
   requestConf: AxiosRequestConfig,
-  throttle?: boolean
+  throttle?: boolean,
+  cacheMaxAgeMS?: number
 ) => {
   let data: any;
   if (throttle) {
+    if (cacheMaxAgeMS) {
+      _requestThrottler.setCacheMaxAgeMS(cacheMaxAgeMS);
+    }
     data = await _requestThrottler.request(requestConf);
   } else {
     data = await axios(requestConf);
