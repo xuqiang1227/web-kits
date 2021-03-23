@@ -92,9 +92,6 @@ export class RequestThrottler {
     }
   };
 
-  setCacheMaxAgeMS = (time: number) => {
-    this.conf.cacheMaxAgeMS = time;
-  }
 }
 
 const _requestThrottler = new RequestThrottler();
@@ -103,18 +100,13 @@ const _requestThrottler = new RequestThrottler();
  * 通用请求接口
  * @param requestConf 请求配置
  * @param throttle 是否限流
- * @param cacheMaxAgeMS 时期时间(毫秒)，默认20000
  */
 export const requestThrottler = async (
   requestConf: AxiosRequestConfig,
-  throttle?: boolean,
-  cacheMaxAgeMS?: number
+  throttle?: boolean
 ) => {
   let data: any;
   if (throttle) {
-    if (cacheMaxAgeMS) {
-      _requestThrottler.setCacheMaxAgeMS(cacheMaxAgeMS);
-    }
     data = await _requestThrottler.request(requestConf);
   } else {
     data = await axios(requestConf);
