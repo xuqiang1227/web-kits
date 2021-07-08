@@ -18,7 +18,7 @@ class RequestBatch {
       `${config.params ? "_params" + JSON.stringify(config.params) : ""
       }`;
 
-    if (this.requestQueue.length > this.queueLength) {
+    if (this.requestQueue.length >= this.queueLength) {
       this.pendingQueue.push(config);
     } else {
       this.requestQueue.push(key);
@@ -39,6 +39,14 @@ class RequestBatch {
       })
     }
   }
+
+  setLength = (length: number) => {
+    if (length > this.requestQueue.length) {
+      this.queueLength = length;
+    } else {
+      this.queueLength = this.requestQueue.length;
+    }
+  }
 }
 
 let _length = 5;
@@ -46,8 +54,7 @@ let _requestBatch = new RequestBatch(_length);
 
 export const requestBatch = async (config: AxiosRequestConfig, length?: number) => {
   if (length && length != _length) {
-    _length = length;
-    _requestBatch = new RequestBatch(length);
+    _requestBatch.setLength(length);
   }
   return await _requestBatch.request(config);
 }
