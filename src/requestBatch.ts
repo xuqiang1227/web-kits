@@ -5,7 +5,7 @@ class RequestBatch {
   private requestQueue: string[] = [];
   private queueLength;
   private pendingQueue: AxiosRequestConfig[] = [];
-  private pendingResolve: {[key: string]: Function}[] = [];
+  private pendingPromise: {[key: string]: Function}[] = [];
   constructor(length: number) {
     this.queueLength = length;
   }
@@ -21,19 +21,22 @@ class RequestBatch {
 
     if (this.requestQueue.length >= this.queueLength) {
       this.pendingQueue.push(config);
-      return new Promise(resolve => {
-        this.pendingResolve.push({[key]: resolve});
+      return new Promise((resolve, reject) => {
+        this.pendingPromise.push({[`${key}_resolve`]: resolve, [`${key}_reject`]: reject});
       });
     } else {
       this.requestQueue.push(key);
       return new Promise((resolve, reject) => {
+        const pending = this.pendingPromise.find(res => !!res[`${key}_resolve`]);
         axios(config).then(data => {
-          const pending = this.pendingResolve.find(res => !!res[key]);
           if(pending) {
-            pending[key](data);
+            pending[`${key}_resolve`](data);
           }
           resolve(data);
         }).catch(e => {
+          if(pending) {
+            pending[`${key}_reject`](e);
+          }
           reject(e);
         }).finally(() => {
           this.requestQueue = this.requestQueue.filter(q => q !== key);
