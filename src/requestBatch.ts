@@ -5,6 +5,7 @@ class RequestBatch {
   private requestQueue: string[] = [];
   private queueLength;
   private pendingQueue: AxiosRequestConfig[] = [];
+  private pendingResolve: {[key: string]: Function}[] = [];
   constructor(length: number) {
     this.queueLength = length;
   }
@@ -20,10 +21,17 @@ class RequestBatch {
 
     if (this.requestQueue.length >= this.queueLength) {
       this.pendingQueue.push(config);
+      return new Promise(resolve => {
+        this.pendingResolve.push({[key]: resolve});
+      });
     } else {
       this.requestQueue.push(key);
       return new Promise((resolve, reject) => {
         axios(config).then(data => {
+          const pending = this.pendingResolve.find(res => !!res[key]);
+          if(pending) {
+            pending[key](data);
+          }
           resolve(data);
         }).catch(e => {
           reject(e);
