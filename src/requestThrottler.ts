@@ -25,7 +25,7 @@ export class RequestThrottler {
 
     if (req) {
       if (req.expired >= Date.now()) {
-        return req;
+        return req.data;
       } else {
         delete this._map[key];
         return null;
@@ -80,17 +80,23 @@ export class RequestThrottler {
             });
             delete this._pendingURLs[key];
             this.setCachedRequest(key, data);
+          }, (ex) => {
+            this.clearCache(key, ex);
           })
           .catch((ex) => {
-            const list = this._pendingURLs[key];
-            list.forEach((item) => {
-              item.reject(ex);
-            });
-            delete this._pendingURLs[key];
+            this.clearCache(key, ex);
           });
       });
     }
   };
+
+  clearCache = (key: string, ex: any) => {
+    const list = this._pendingURLs[key];
+    list.forEach((item) => {
+      item.reject(ex);
+    });
+    delete this._pendingURLs[key];
+  }
 
 }
 
