@@ -28,12 +28,12 @@ class RequestBatch {
       this.requestQueue.push(key);
       return new Promise((resolve, reject) => {
         const pending = this.pendingPromise.find(res => !!res[`${key}_resolve`]);
-        axios(config).then(data => {
+        axios(config).then((data: any) => {
           if(pending) {
             pending[`${key}_resolve`](data);
           }
           resolve(data);
-        }).catch(e => {
+        }).catch((e: any) => {
           if(pending) {
             pending[`${key}_reject`](e);
           }

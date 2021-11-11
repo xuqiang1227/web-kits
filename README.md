@@ -116,3 +116,26 @@ import { requestThrottler } from 'web-js-kits';
 // 当第二个参数为true时，重新发的接口会缓存到内容，不会消耗网络资源
 requestThrottler({url: '', method: 'get'}, true);
 ```
+
+* requestBatch
+
+```js
+import { requestBatch } from 'web-js-kits';
+
+// 第一个参数为 axios config
+// 当第二个参数可选 默认为5时，同时并发5个请求
+requestBatch({url: '', method: 'get'}, true);
+```
+
+* formLoadingHelper
+
+```js
+import { formLoadingHelper } from 'web-js-kits';
+const { formLoadingCheck, setFormLoadingStatus } = formLoadingHelper;
+
+setFormLoadingStatus({formId: 'formId', id: 'id', status: true}) // 开始执行 id 操作
+setFormLoadingStatus({formId: 'formId', id: 'id', status: false}) // 结束执行 id 操作
+
+await formLoadingCheck(formId) // 等待当前formId 的所有操作完成。
+
+```

@@ -1,6 +1,6 @@
 {
   "name": "web-js-kits",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
   "author": "xuqiang",
@@ -18,7 +18,7 @@
     "js function"
   ],
   "peerDependencies": {
-    "axios": "^0.21.3"
+    "axios": "^0.24.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.13",
@@ -38,5 +38,6 @@
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "dependencies": {}
 }
