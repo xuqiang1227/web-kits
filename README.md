@@ -66,7 +66,7 @@ getDevice() // ios or android or pc or mobile
 
 ```
 
-* isEmail
+* isWebSite
 
 ```ts
   import { isWebSite } from 'web-js-kits';
@@ -115,6 +115,8 @@ import { requestThrottler } from 'web-js-kits';
 // 第一个参数为 axios config
 // 当第二个参数为true时，重新发的接口会缓存到内容，不会消耗网络资源
 requestThrottler({url: '', method: 'get'}, true);
+
+// requestThrottlerWithFormData 支持formData 数据格式
 ```
 
 * requestBatch
