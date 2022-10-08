@@ -1,4 +1,6 @@
-import axios, { AxiosRequestConfig } from "axios";
+import _axios, { AxiosRequestConfig, AxiosStatic } from "axios";
+
+let axios = _axios;
 
 interface RequestThrottlerConfig {
   cacheMaxAgeMS: number;
@@ -109,8 +111,12 @@ const _requestThrottler = new RequestThrottler();
  */
 export const requestThrottler = async (
   requestConf: AxiosRequestConfig,
-  throttle?: boolean
+  throttle?: boolean,
+  service?: AxiosStatic
 ) => {
+  if(service) {
+    axios = service
+  }
   let data: any;
   if (throttle) {
     data = await _requestThrottler.request(requestConf);

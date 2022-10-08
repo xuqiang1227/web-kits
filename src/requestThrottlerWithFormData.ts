@@ -5,11 +5,13 @@ export const requestThrottlerWithFormData = async (
   requestConf: AxiosRequestConfig,
   throttle?: boolean
 ) => {
+  //@ts-ignore
   requestConf['headers'] = {
     ...requestConf['headers'],
     'Content-Type': 'application/x-www-form-urlencoded'
   };
   requestConf['transformRequest'] = [
+    //@ts-ignore
     ...requestConf['transformRequest'],
     (data: any) => {
       let ret = ''
