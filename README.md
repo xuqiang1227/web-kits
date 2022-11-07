@@ -9,7 +9,7 @@ Some kits commonly used in work of frontend.
 * install
 
 ```
-   yarn install web-js-kits
+   yarn add web-js-kits
    //or 
    npm i web-js-kits
 ```
