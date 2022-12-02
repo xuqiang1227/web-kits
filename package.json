@@ -1,6 +1,6 @@
 {
   "name": "web-js-kits",
-  "version": "0.0.20",
+  "version": "0.0.22",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
   "types": "./dist/index.d.ts",

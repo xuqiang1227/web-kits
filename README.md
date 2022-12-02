@@ -141,3 +141,8 @@ setFormLoadingStatus({formId: 'formId', id: 'id', status: false}) // 结束执�
 await formLoadingCheck(formId) // 等待当前formId 的所有操作完成。
 
 ```
+
+```js
+import { cheseManey } from 'web-js-kits';
+cheseManey(1000) // 壹仟元整
+```

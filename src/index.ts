@@ -15,3 +15,4 @@ export * from './countryCode';
 export * from './formLoading';
 export * from './requestBatch';
 export * from './requestThrottlerWithFormData';
+export * from './money';
