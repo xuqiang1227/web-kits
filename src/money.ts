@@ -1,4 +1,4 @@
-export const cheseMoney = (_dValue: number) => {
+export const chineseMoney = (_dValue: number) => {
   let maxDec = 5;
   // 验证输入金额数值或数值字符串：
   let dValue = _dValue.toString().replace(/,/g, '')
