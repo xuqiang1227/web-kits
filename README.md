@@ -146,3 +146,16 @@ await formLoadingCheck(formId) // 等待当前formId 的所有操作完成。
 import { chineseMoney } from 'web-js-kits';
 cheseManey(1000) // 壹仟元整
 ```
+
+```js
+// 广告飘窗
+import { AdMove } from 'web-js-kits';
+
+// 飘窗内容
+<div id="float">
+</div>
+
+//js 
+new AdMove("float", 1).Run();
+
+```

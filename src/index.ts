@@ -16,3 +16,5 @@ export * from './formLoading';
 export * from './requestBatch';
 export * from './requestThrottlerWithFormData';
 export * from './money';
+const AdMove = require('./adMode.js');
+export { AdMove };
