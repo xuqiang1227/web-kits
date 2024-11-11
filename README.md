@@ -159,3 +159,6 @@ import { AdMove } from 'web-js-kits';
 new AdMove("float", 1).Run();
 
 ```
+
+
+发布异常： `yarn config set network-timeout 300000`

@@ -1,6 +1,6 @@
 {
   "name": "web-js-kits",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Some kits commonly used in work of frontend.",
   "main": "index.js",
   "types": "./dist/index.d.ts",
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "copyfiles": "^2.4.1",
     "jest": "^26.4.2",
     "ts-jest": "^26.4.0",
     "ts-loader": "^8.0.3",
@@ -35,6 +36,7 @@
   "scripts": {
     "dist": "rimraf ./dist && tsc -d",
     "analyze": "webpack --profile --json > status.json",
+    "copy": "copyfiles ./src/adMove.js ./dist",
     "test": "jest"
   },
   "publishConfig": {

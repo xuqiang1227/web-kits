@@ -1,3 +1,4 @@
+//@ts-nocheck
 function addEvent(obj, evtType, func, cap) {
   cap = cap || false;
   if (obj.addEventListener) {
